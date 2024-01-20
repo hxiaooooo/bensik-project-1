@@ -475,6 +475,13 @@ a {
 
 /* ===============================================  */
 
+.clients .images a {
+  display: flex;
+  align-items: center;
+  height: 90px;
+  padding: 0 42px;
+  border-radius: 12px;
+}
 .stats .img-block .image {
   display: block;
   margin-left: auto;
@@ -632,7 +639,7 @@ a {
 
 .footer .social {
   display: flex;
-  gap: 10px;
+  gap: 16px;
   margin-top: 40px;
 }
 
@@ -643,6 +650,7 @@ a {
   width: 28px;
   height: 28px;
   border-radius: 3px;
+  background: #f9f9f9;
 }
 
 .footer .social-link:hover {
