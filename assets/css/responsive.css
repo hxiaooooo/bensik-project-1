@@ -112,6 +112,10 @@
     width: 100%;
   }
 
+  .stats .img-block .image {
+    width: 100%;
+  }
+
   .stats .img-block {
     order: 2;
     margin-top: 80px;
@@ -205,12 +209,8 @@
     display: none;
   }
 
-  .footer .column {
-    overflow: hidden;
-  }
-
   .over-width {
-    word-break: break-all;
+    width: 100%;
   }
 }
 
