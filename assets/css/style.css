@@ -642,12 +642,14 @@ a {
   color: #7a7a7e;
   font-size: 1.6rem;
   font-weight: 400;
+}
+
+.footer .item a {
   white-space: nowrap;
 }
 
 .footer .desc {
   line-height: 1.75;
-  white-space: wrap;
 }
 
 .footer .social {
