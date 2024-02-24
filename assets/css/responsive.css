@@ -170,6 +170,40 @@
   .navbar .actions {
     display: none;
   }
+
+  .features .list {
+    grid-template-columns: 1fr;
+  }
+
+  .stats .row-qty {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+    text-align: center;
+  }
+
+  .features header .desc {
+    width: 70%;
+  }
+
+  .subscription .info {
+    text-align: center;
+  }
+
+  .footer .row-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+
+  .footer .copyright {
+    width: 40%;
+    text-align: center;
+  }
+
+  .hide-on-mobile {
+    display: none;
+  }
 }
 
 /* Others */
