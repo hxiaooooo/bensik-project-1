@@ -127,7 +127,7 @@
   }
 
   .stats .sub-title {
-    width: 70%;
+    width: 85%;
   }
 
   .stats .info .desc {
@@ -190,6 +190,11 @@
     width: 70%;
   }
 
+  .list-guides {
+    flex-direction: column;
+    row-gap: 50px;
+  }
+
   .subscription .info {
     text-align: center;
   }
@@ -207,10 +212,6 @@
 
   .hide-on-mobile {
     display: none;
-  }
-
-  .over-width {
-    width: 100%;
   }
 }
 
@@ -230,5 +231,12 @@
   .hero-wrap .desc {
     width: 80%;
     margin: 30px auto auto;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .clients .images {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
