@@ -205,8 +205,12 @@
     display: none;
   }
 
+  .footer .column {
+    overflow: hidden;
+  }
+
   .over-width {
-    white-space: break-spaces;
+    word-break: break-all;
   }
 }
 
