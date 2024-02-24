@@ -84,13 +84,16 @@
 
     <!-- Fonts -->
     <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- Lato -->
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <!--  -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- Responsive -->
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
 
     <link rel="manifest" href="./assets/favicon/manifest.json" />
     <meta name="msapplication-TileColor" content="#ffffff" />
@@ -101,21 +104,35 @@
     <meta name="theme-color" content="#ffffff" />
   </head>
   <body>
-    <div class="fixed-header">
+    <!-- PC header -->
+    <header class="fixed-header">
       <div class="content">
         <nav class="navbar">
+          <!-- Table / Mobile menu -->
+          <label for="menu-checkbox" class="toggle-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path
+                fill="currentcolor"
+                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+              />
+            </svg>
+          </label>
+
           <!-- Logo -->
-          <a href="#">
+          <a class="logo" href="#">
             <img src="./assets/img/Logo.svg" alt="Besnik" />
           </a>
 
           <!-- Navigation -->
-          <ul>
+          <ul id="pc-nav">
             <li><a href="#">Home</a></li>
             <li><a href="#features">Features</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#resources">Resources</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li class="show-on-mobile seperate"><a href="#!">Sign in</a></li>
+            <li class="show-on-mobile"><a href="#!">Sign up</a></li>
           </ul>
           <!-- Action -->
           <div class="actions">
@@ -123,6 +140,35 @@
             <a href="#!" class="btn action-btn">Sign up</a>
           </div>
         </nav>
+      </div>
+    </header>
+
+    <!-- Table/mobile header -->
+    <div class="mobile-header">
+      <input
+        type="checkbox"
+        name=""
+        id="menu-checkbox"
+        class="menu-checkbox"
+        hidden
+      />
+      <!-- Overlay -->
+      <label for="menu-checkbox" class="menu-overlay"></label>
+
+      <!-- Menu content -->
+      <div class="menu-drawer">
+        <!-- Logo -->
+        <a href="#">
+          <img src="./assets/img/Logo.svg" alt="Besnik" />
+        </a>
+
+        <!-- Navigation -->
+        <ul id="mobile-nav"></ul>
+        <script>
+          const pcNav = document.querySelector("#pc-nav");
+          const mobileNav = document.querySelector("#mobile-nav");
+          mobileNav.innerHTML = pcNav.innerHTML;
+        </script>
       </div>
     </div>
 
